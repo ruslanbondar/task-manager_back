@@ -39,9 +39,7 @@ router.get('/tasks', auth, async (req, res) => {
             match,
             options: {
                 limit: parseInt(req.query.limit),
-                page: parseInt(req.query.page),
                 skip: parseInt(req.query.skip),
-                pages: parseInt(req.query.pages),
                 sort
             }
         }).execPopulate()
