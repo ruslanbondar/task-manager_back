@@ -1,0 +1,18 @@
+{
+  "openapi": "3.0.1",
+  "servers": [
+    {
+      "url": "https://magisoft.herokuapp.com/api"
+    },
+    {
+      "url": "http://localhost:8000/api"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Authorization",
+      "description": "Authorization routes"
+    }
+  ],
+  "paths": {}
+}
