@@ -8,11 +8,51 @@
       "url": "http://localhost:3001/api-docs"
     }
   ],
-  "tags": [
-    {
-      "name": "Authorization",
-      "description": "Authorization routes"
+  "paths": {
+    "/users": {
+      "post": {
+        "tags": [
+          "Authorization"
+        ],
+        "summary": "Sign up user",
+        "operationId": "regUser",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "description": "name of the user",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "description": "name of the user",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "error"
+          }
+        }
+      }
     }
-  ],
-  "paths": {}
+  }
 }
