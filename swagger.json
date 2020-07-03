@@ -2,10 +2,10 @@
   "openapi": "3.0.1",
   "servers": [
     {
-      "url": "https://magisoft.herokuapp.com/api"
+      "url": "https://task-manager-magisoft.herokuapp.com/api-docs"
     },
     {
-      "url": "http://localhost:8000/api"
+      "url": "http://localhost:3001/api-docs"
     }
   ],
   "tags": [
